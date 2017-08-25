@@ -1,0 +1,5 @@
+*.pyc
+env/
+frontend/node_modules/
+backend/sqlite.db
+backend/eduDB/local_settings.py
