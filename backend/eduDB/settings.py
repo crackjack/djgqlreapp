@@ -39,7 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'graphene_django',
+    'ccc',
 ]
+
+GRAPHENE = {
+    'SCHEMA': 'eduDB.schema.schema',
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -50,10 +55,6 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
-GRAPHENE = {
-	'SCHEMA': 'ccc.schema.schema'
-}
 
 ROOT_URLCONF = 'eduDB.urls'
 
